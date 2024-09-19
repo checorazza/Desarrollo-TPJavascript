@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="ejercicios.js"></script>
+    <title>Trabajo Práctico Javascript</title>
+    <style>
+      input:disabled {
+          background-color: #f0f0f0;
+          cursor: not-allowed;
+      }
+  </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
+    <p>Este es el primer párrafo.</p>
+    <p>Este es el segundo párrafo.</p>
+    <p>Este es el tercer párrafo.</p>
+
+    <button onclick="cambiarColor()">Cambiar color a azul</button>
+    <br>
+
+    <input type="text" id="campoTexto" placeholder="Escribe algo aquí...">
+    <button id="btnDeshabilitar">Deshabilitar</button>
+    <button id="btnHabilitar">Habilitar</button>
+    <br>
+
+    <form id="formulario">
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" required>
+      <button onclick="mostrarCorreo()">Guardar</button>
+      <div id="mensaje"></div>
+    <button id="btnEliminar" style="display: none;">Eliminar Correo</button>
+  </form>
+  </body>
+</html>
